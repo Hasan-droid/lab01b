@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        ul li {
+            display:inline;
+             background-color:burlywood;
+        }
+        h1 {
+            background-color: salmon;
+            color: snow;
+            text-align: center;
+        }
+    </style>
+    <title>lab01b</title>
+</head>
+<body>
+    <header>
+       
+       
+       
+      
+        
+    </header>
+    <main>
+        <h1>lab 01b</h1>
+         <ul >
+            <li><a href="#">home</a></li>
+       <li><a href="#">sales</a></li>
+       <li><a href="#">services</a></li> 
+
+        </ul>
+        <article>
+           <p id="p1"style="color:red;  background-color: salmon;"></p>
+           <p id="p2" style="color:steelblue ; background-color: yellowgreen;"></p>
+           <p id="p3" style="color: violet; background-color: black;"></p>
+           <p id="p4" style="color: coral; background-color: cyan;"></p>
+        </article>
+    </main>
+    <script>
+        let favmovie;
+        let secanswer;
+        let name=prompt('what\'s your name')
+        let color=prompt(name + " what\'s your favorite color")
+        console.log("name "+name)
+        console.log("favorite color "+ color)
+        
+        let moive=prompt(name +" do you like to whatch movies")
+        console.log("watch movies "+ moive)
+        if(moive=="yes")
+        {
+           favmovie=prompt("recommand us a movie you love") 
+           alert(favmovie+" what a great movie")
+           console.log("favorite movie "+ favmovie)
+           document.getElementById("p3").innerHTML="secound thing secound you do like to watch movies and your favorite movie is "+favmovie
+        }
+        else{
+                   secanswer=prompt("what do u like to do in you spare time then")
+                   console.log("Another hobbies "+ secanswer)
+                   document.getElementById("p3").innerHTML="secound thing secound your hobbies are "+secanswer
+        }
+        let sports=prompt(name + " do u do sports")
+        console.log("doing sports :" +sports)
+        if(sports=="yes")
+        {
+            alert("good job")
+            document.getElementById("p4").innerHTML="last thing last you do  sports ";
+
+        }
+        else{
+            alert(name +" try to do some soprts some time")
+            document.getElementById("p4").innerHTML="last thing last you dont do any sports ";
+        }
+        document.getElementById("p1").innerHTML="hello " + name +" we take some information from you and we would like to review it"
+        +"with you"
+        document.getElementById("p2").innerHTML="first thing first your favorite color is "+color;
+        
+        
+    </script>
+    <footer>&copy; all rights recived ASAC</footer>
+    
+</body>
+</html>
